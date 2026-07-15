@@ -5,28 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Srikoushikkamal · Data Engineer</title>
 
-<!-- SEO -->
-<meta name="description" content="Srikoushikkamal Data Engineer in Dublin. I build serverless, event-driven data pipelines that turn raw, messy data into analytics-ready answers. AWS · Python · SQL · PySpark." />
-<meta name="author" content="Srikoushikkamal" />
-<link rel="canonical" href="https://srikoushikkamal.github.io/" />
-
-<!-- Open Graph (LinkedIn / Facebook link previews) -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Srikoushikkamal · Data Engineer" />
-<meta property="og:description" content="I build serverless, event-driven data pipelines: systems that turn raw, messy data into answers on their own." />
-<meta property="og:url" content="https://srikoushikkamal.github.io/" />
-<!-- EDIT: host a 1200x630 preview image and paste its URL below for a rich LinkedIn card -->
-<meta property="og:image" content="https://srikoushikkamal.github.io/preview.png" />
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Srikoushikkamal · Data Engineer" />
-<meta name="twitter:description" content="Serverless, event-driven data pipelines. AWS · Python · SQL · PySpark." />
-<meta name="twitter:image" content="https://srikoushikkamal.github.io/preview.png" />
-
-<!-- Favicon (inline accent dot — no extra file needed) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230C0A09'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23FF4D2E'/%3E%3C/svg%3E" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -35,15 +13,14 @@
 
 <style>
   :root{
-    --bg:#0C0A09;
-    --bg-soft:#161311;
-    --ink:#F1E9DC;
-    --muted:#928C83;
-    --faint:rgba(241,233,220,0.08);
-    --faint-2:rgba(241,233,220,0.04);
-    --accent:#FF4D2E;
-    --accent-2:#FFC02E;
-    --accent-soft:rgba(255,77,46,0.14);
+    --bg:#0B0B0F;
+    --bg-soft:#131319;
+    --ink:#ECE8DF;
+    --muted:#8A8893;
+    --faint:rgba(236,232,223,0.08);
+    --faint-2:rgba(236,232,223,0.04);
+    --accent:#FF6B3D;
+    --accent-soft:rgba(255,107,61,0.14);
     --display:'Fraunces', Georgia, serif;
     --body:'Hanken Grotesk', sans-serif;
     --mono:'JetBrains Mono', monospace;
@@ -104,7 +81,7 @@
   .avail{
     display:inline-flex; align-items:center; gap:10px; align-self:flex-start;
     font-family:var(--mono); font-size:11.5px; letter-spacing:0.08em; text-transform:uppercase;
-    color:var(--ink); border:1px solid rgba(255,77,46,0.4); background:var(--accent-soft);
+    color:var(--ink); border:1px solid rgba(255,107,61,0.4); background:var(--accent-soft);
     padding:8px 15px; border-radius:100px; margin-bottom:26px;
   }
   .avail .pulse{
@@ -122,8 +99,8 @@
     border:1px solid var(--faint); color:var(--ink);
   }
   .cta:hover{ border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
-  .cta.primary{ background:var(--accent); color:#0C0A09; border-color:var(--accent); font-weight:500; }
-  .cta.primary:hover{ background:#ff6347; color:#0C0A09; box-shadow:0 16px 40px -16px rgba(255,77,46,0.6); }
+  .cta.primary{ background:var(--accent); color:#0B0B0F; border-color:var(--accent); font-weight:500; }
+  .cta.primary:hover{ background:#ff7d54; color:#0B0B0F; box-shadow:0 16px 40px -16px rgba(255,107,61,0.6); }
 
   /* ---------- Blocks ---------- */
   .block{ padding:60px 0 120px; }
@@ -136,9 +113,9 @@
 
   /* ---------- Flip project cards ---------- */
   .proj-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
-  .flip.feature{ grid-column:1 / -1; height:340px; }
-  .flip.feature .front .story{ font-size:clamp(1.3rem, 2.9vw, 1.9rem); max-width:30ch; }
-  .flip{ perspective:1500px; height:380px; cursor:pointer; }
+  .flip.feature{ grid-column:1 / -1; height:300px; }
+  .flip.feature .front .story{ font-size:clamp(1.5rem, 3.4vw, 2.2rem); max-width:24ch; }
+  .flip{ perspective:1500px; height:340px; cursor:pointer; }
   .flip-inner{
     position:relative; width:100%; height:100%;
     transition:transform .9s cubic-bezier(.2,.75,.2,1); transform-style:preserve-3d;
@@ -158,14 +135,14 @@
   }
   .front .story{
     font-family:var(--display); font-style:italic; font-weight:340;
-    font-size:clamp(1.2rem, 2.5vw, 1.55rem); line-height:1.34; color:var(--ink);
+    font-size:clamp(1.3rem, 2.8vw, 1.7rem); line-height:1.34; color:var(--ink);
     letter-spacing:-0.005em;
   }
   .front .story .lead{ color:var(--ink); }
-  .front .story .turn{ display:block; color:var(--accent-2); }
+  .front .story .turn{ display:block; color:var(--accent); }
   .front .story .turn::before{
     content:""; display:block; width:30px; height:2px; border-radius:2px;
-    background:var(--accent-2); opacity:.85; margin:14px 0;
+    background:var(--accent); opacity:.8; margin:14px 0;
   }
   .back h3{
     font-family:var(--display); font-weight:380; font-size:1.4rem;
@@ -179,8 +156,8 @@
   .flip:hover .front .flip-hint .arr{ transform:rotate(180deg); }
 
   .back{
-    background:linear-gradient(165deg, #1c130d, rgba(24,15,10,0.6));
-    border-color:rgba(255,77,46,0.32); transform:rotateY(180deg);
+    background:linear-gradient(165deg, #17120f, rgba(20,15,12,0.6));
+    border-color:rgba(255,107,61,0.32); transform:rotateY(180deg);
     justify-content:flex-start;
   }
   .back .label{
@@ -247,11 +224,6 @@
 
   .reveal{ opacity:0; transform:translateY(24px); transition:opacity 1s, transform 1s; }
   .reveal.in{ opacity:1; transform:none; }
-  .made-note{
-    font-family:var(--mono); font-size:11.5px; letter-spacing:0.03em; line-height:1.5;
-    color:var(--muted); margin-bottom:16px; align-self:flex-start; max-width:46ch;
-  }
-  .made-note b{ color:var(--accent-2); font-weight:500; }
   .hero h1, .hero .lede, .hero .eyebrow{
     opacity:0; transform:translateY(18px); animation:rise 1s forwards;
   }
@@ -261,9 +233,7 @@
   @media (max-width:760px){
     .hud.tr{ display:none; }
     .proj-grid{ grid-template-columns:1fr; }
-    .flip{ height:380px; }
-    .flip.feature{ height:380px; }
-    .face{ padding:28px 26px; }
+    .flip{ height:330px; }
     section, .hero{ padding-left:24px; padding-right:24px; }
     .block{ padding:50px 0 90px; }
   }
@@ -281,13 +251,12 @@
 
   <!-- ============ COMPACT HERO ============ -->
   <header class="hero">
-    <p class="made-note">Full disclosure: an AI <b>built this website</b>. I built the projects in it — it just made me look good.</p>
     <div class="avail"><span class="pulse"></span> Open to Junior / Associate Data Engineer roles</div>
     <h1><span class="hl">S</span>ri<span class="hl">k</span>oushi<span class="hl">k</span>kamal</h1>
     <p class="lede">I build <b>serverless, event-driven data pipelines</b>: systems that turn raw, messy data into answers on their own. Here's what I've made.</p>
     <div class="cta-row">
       <a class="cta primary" href="#work">See my work</a>
-      <a class="cta" href="cv.pdf" download>Download CV</a>
+      <a class="cta" href="Srikoushikkamal_Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
       <a class="cta" href="#contact">Get in touch</a>
     </div>
   </header>
@@ -302,7 +271,7 @@
         <div class="flip-inner">
           <div class="face front">
             <div class="card-no">01</div>
-            <p class="story"><span class="lead">Order data comes in messy, and it never stops.</span><span class="turn">This pipeline cleans it and gets it ready to use — all by itself.</span></p>
+            <p class="story"><span class="lead">Orders pile up faster than anyone can read.</span><span class="turn">So something makes sense of them, on its own.</span></p>
             <div class="flip-hint"><span class="arr">&#8635;</span> Flip to reveal</div>
           </div>
           <div class="face back">
@@ -324,7 +293,7 @@
         <div class="flip-inner">
           <div class="face front">
             <div class="card-no">02</div>
-            <p class="story"><span class="lead">A product's real story is hidden in thousands of reviews.</span><span class="turn">This reads them all and saves them in one clean file.</span></p>
+            <p class="story"><span class="lead">The truth about a product hides in a thousand reviews.</span><span class="turn">So every one of them gets read at once.</span></p>
             <div class="flip-hint"><span class="arr">&#8635;</span> Flip to reveal</div>
           </div>
           <div class="face back">
@@ -344,7 +313,7 @@
         <div class="flip-inner">
           <div class="face front">
             <div class="card-no">03</div>
-            <p class="story"><span class="lead">Prices and stock change all the time.</span><span class="turn">This grabs the data before it changes.</span></p>
+            <p class="story"><span class="lead">Prices and stock change by the hour.</span><span class="turn">So they're captured before the moment slips.</span></p>
             <div class="flip-hint"><span class="arr">&#8635;</span> Flip to reveal</div>
           </div>
           <div class="face back">
@@ -397,9 +366,10 @@
     <h2>Let&rsquo;s&nbsp;<em>talk</em>.</h2>
     <div class="links">
       <a href="mailto:srikoushikkamal@gmail.com">srikoushikkamal@gmail.com</a>
+      <a href="tel:+353858188072">+353 85 818 8072</a>
       <a href="https://www.linkedin.com/in/srikoushikkamal/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/Srikoushikkamal" target="_blank" rel="noopener">GitHub</a>
-      <a href="cv.pdf" download>CV (PDF)</a>
+      <a href="Srikoushikkamal_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
     </div>
   </section>
 
@@ -420,16 +390,15 @@
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
   const scene = new THREE.Scene();
-  scene.fog = new THREE.FogExp2(0x0C0A09, 0.05);
+  scene.fog = new THREE.FogExp2(0x0B0B0F, 0.05);
   const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 100);
   camera.position.z = 18;
 
   const group = new THREE.Group();
   scene.add(group);
 
-  const inkC = new THREE.Color(0xF1E9DC);
-  const accC = new THREE.Color(0xFF4D2E);
-  const goldC = new THREE.Color(0xFFC02E);
+  const inkC = new THREE.Color(0xECE8DF);
+  const accC = new THREE.Color(0xFF6B3D);
 
   /* ---- nodes ---- */
   const COUNT = 70, SPREAD = 13;
@@ -481,7 +450,7 @@
   const pkts=[];
   const pktGeo=new THREE.OctahedronGeometry(.16);
   for(let i=0;i<12;i++){
-    const col=i%3===0?accC:(i%3===1?goldC:inkC);
+    const col=i%3===0?accC:inkC;
     const m=new THREE.Mesh(pktGeo,new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.9}));
     m.position.set((Math.random()-.5)*SPREAD,(Math.random()-.5)*SPREAD,(Math.random()-.5)*SPREAD);
     const v=new THREE.Vector3((Math.random()-.5)*.05,(Math.random()-.5)*.05,(Math.random()-.5)*.05);
