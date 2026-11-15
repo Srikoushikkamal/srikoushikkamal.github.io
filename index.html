@@ -384,7 +384,7 @@
           </div>
           <div class="face back">
             <h3>Dublin Bus Real-Time Delays</h3>
-            <p>Collects live trip updates from the National Transport Authority GTFS-Realtime feed into a CSV for delay analysis. Fixed a hard-coded API key, missing delays recorded as zero and an unchecked response, with tests for the row extraction.</p>
+            <p>Collects live trip updates from the National Transport Authority GTFS-Realtime feed and reconciles them against the static timetable, so every delay has a route, a stop and a scheduled time. Retries feed gaps, skips malformed records and reports what does not match.</p>
             <div class="tags">
               <span class="tag">Python</span><span class="tag">GTFS-Realtime</span>
               <span class="tag">Protobuf</span><span class="tag">pytest</span>
