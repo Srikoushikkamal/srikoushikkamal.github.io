@@ -404,10 +404,10 @@
           </div>
           <div class="face back">
             <h3>query-triage</h3>
-            <p>A PostgreSQL database with 8 million rows and three queries that are slow for three different reasons: a missing join index, a function hiding an index, and an unindexed foreign key. Each is fixed and re-timed, up to 1000x faster. Next is a tool that reads EXPLAIN ANALYZE output and asks an LLM for the fix.</p>
+            <p>A PostgreSQL database with 8 million rows and three queries that are slow for three different reasons: a missing join index, a function hiding an index, and an unindexed foreign key. Each is fixed and re-timed, up to 1000x faster. A tool then reads the EXPLAIN ANALYZE output, asks an LLM for the fix, applies it and keeps it only if the results match and the query got faster.</p>
             <div class="tags">
               <span class="tag">PostgreSQL</span><span class="tag">SQL</span>
-              <span class="tag">Docker</span><span class="tag">EXPLAIN ANALYZE</span>
+              <span class="tag">Python</span><span class="tag">EXPLAIN ANALYZE</span>
             </div>
             <a class="repo" href="https://github.com/Srikoushikkamal/query-triage" target="_blank" rel="noopener">View repository &rarr;</a>
           </div>
